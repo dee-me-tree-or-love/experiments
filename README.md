@@ -1,6 +1,6 @@
 # Experiments
 
-Hereby I present to you the repository of various experiments and coding trials.  
+Hi there, I am repository for various experiments and coding trials.  
 
 ## Idea 
 
