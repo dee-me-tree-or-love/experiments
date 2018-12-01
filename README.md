@@ -8,4 +8,4 @@ This serves as a hub for various projects made for learning purposes.
 
 | Project | Branch |
 | --- | --- |
-[//]: # (new_project_entry)
+<!-- (new_project_entry) -->
