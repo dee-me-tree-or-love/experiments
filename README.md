@@ -21,4 +21,5 @@ This serves as a hub for various projects made for learning purposes.
 
 | Project | Branch | Language | Description |
 | --- | --- | --- | --- |
+| feedparsing | exp-feedparsing |
 <!-- (new_project_entry) -->
