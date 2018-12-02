@@ -21,5 +21,5 @@ This serves as a hub for various projects made for learning purposes.
 
 | Project | Branch | Language | Description |
 | --- | --- | --- | --- |
-| feedparsing | exp-feedparsing |
+| feedparsing | exp-feedparsing | Python | The feedparser experiment to get info from Brainpickings.com RSS feed
 <!-- (new_project_entry) -->
