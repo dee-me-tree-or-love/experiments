@@ -4,6 +4,7 @@ from src.tasks.new_project.validation import Validator
 from src.tasks.new_project.git_manager import GitManager
 from src.tasks.new_project.readme_editor import ReadmeEditor
 from src.tasks.new_project.project_registry import ProjectRegistry
+from src.tasks.new_project.folder_manager import FolderManager
 
 
 class NewProjectHandler:
@@ -22,6 +23,7 @@ class NewProjectHandler:
         self.add_new_project_information_to_readme(project)
         self.stage_readme_changes()
         self.commit_readme_changes(project)
+        self.create_project_directory(project)
 
         self.announce_new_project_ready(project)
 
@@ -56,6 +58,9 @@ class NewProjectHandler:
 
     def commit_readme_changes(self, project):
         GitManager.commit(self.command_runner, "new project %s" % project.name)
+
+    def create_project_directory(self, project):
+        FolderManager.create_directory(project.name)
 
     def announce_new_project_ready(self, project):
         """
