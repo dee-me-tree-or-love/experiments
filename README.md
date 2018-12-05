@@ -22,5 +22,5 @@ This serves as a hub for various projects made for learning purposes.
 | Project | Branch | Language | Description |
 | --- | --- | --- | --- |
 | feedparsing | exp-feedparsing | Python | The feedparser experiment to get info from Brainpickings.com RSS feed
-| haskell_sandbox | exp-haskell_sandbox |
+| haskell_sandbox | exp-haskell_sandbox | Haskell | Some practice and random exercises for Haskell
 <!-- (new_project_entry) -->
