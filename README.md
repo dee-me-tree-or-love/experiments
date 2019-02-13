@@ -23,5 +23,5 @@ This serves as a hub for various projects made for learning purposes.
 | --- | --- | --- | --- |
 | feedparsing | exp-feedparsing | Python | The feedparser experiment to get info from Brainpickings.com RSS feed
 | haskell_sandbox | exp-haskell_sandbox | Haskell | Some practice and random exercises for Haskell
-| flyweight-python | exp-flyweight-python |
+| flyweight-python | exp-flyweight_python | Python | Flyghweight pattern exape in Python
 <!-- (new_project_entry) -->
