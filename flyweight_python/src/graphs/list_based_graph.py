@@ -8,10 +8,10 @@ class ListBasedGraph(BaseGraph):
         self._edges = edges
 
     def get_edges(self):
-        return list(self._edges)
+        return self._edges
 
     def get_nodes(self):
-        return list(self._nodes)
+        return self._nodes
 
     def add_edge(self, edge):
         self._edges.append(edge)

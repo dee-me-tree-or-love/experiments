@@ -3,25 +3,30 @@ from collections import deque
 from src.operators.base_operator import BaseOperator, Path
 
 
-class BFSOperator(BaseOperator):
-    _KEY = "bfs"
+class BFSSearchOperator(BaseOperator):
+    _KEY = "bfs_search"
 
     def __init__(self):
         self._open_set = deque()
         self._closed_set = set()
         self._path = []
 
-    def search(self, graph, goal_name):
-        """
-        """
-        nodes = graph.get_nodes()
-        print(list(map(lambda n: str(n), nodes)))
-        start = nodes.pop()
-        print(start)
-        print("~~")
-        self._add_to_queue(start)
+    def perform(self, graph, start_name, end_name):
+        return self.search(graph, start_name, end_name)
 
-        path = self._lookup_target(goal_name)
+    def search(self, graph, start_name, target_name):
+        """
+        """
+        nodes = list(graph.get_nodes())
+        print(list(map(lambda n: str(n), nodes)))
+        possible_starts = (list(filter(lambda n: n.name == start_name, nodes)))
+        if len(possible_starts) > 0: 
+            start = possible_starts.pop()
+            print(start)
+            print("~~")
+            self._add_to_queue(start)
+
+        path = self._lookup_target(target_name)
         return path
 
     def _lookup_target(self, goal_name):
