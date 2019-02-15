@@ -8,7 +8,7 @@ def test_operator(operator, test_graph, source, target):
     start_time = time.time()
     path = operator.perform(test_graph, source, target)
     elapsed_time = time.time() - start_time
-    print("----- %.8f ms:" % elapsed_time)
+    print("\n%s ----- %.8f ms:" % (operator.get_key(), elapsed_time))
     print(path)
     print("-----\n")
     operator.reset()
